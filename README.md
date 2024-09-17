@@ -31,8 +31,15 @@ This repository contains scripts to set up a Jenkins instance running inside a D
    chmod +x setup_environment.sh
 ```
 3. Run the Setup Script
-
-  ```bash
+```
   ./setup_environment.sh
 ```
 
+4. if the jenkins secret is not working than enter in the container 
+```
+sudo docker exec -it "can_id" bash
+```
+5 . get the sec key 
+```
+cat /var/lib/jenkins/secrets/initialAdminPassword
+```
